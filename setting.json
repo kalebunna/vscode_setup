@@ -1,0 +1,189 @@
+{
+  "editor.copyWithSyntaxHighlighting": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.emptySelectionClipboard": false,
+  "workbench.editor.enablePreview": true,
+  "window.newWindowDimensions": "inherit",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "files.trimTrailingWhitespace": false,
+  "diffEditor.renderSideBySide": false,
+  "editor.snippetSuggestions": "top",
+  "editor.detectIndentation": false,
+  "window.nativeFullScreen": true,
+  "files.insertFinalNewline": false,
+  "files.trimFinalNewlines": false,
+  "workbench.editor.showTabs": "multiple",
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "on",
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "workbench.colorTheme": "Cobalt Next",
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+
+  "breadcrumbs.enabled": false,
+  "scm.diffDecorations": "none",
+  "editor.hover.enabled": false,
+  "editor.matchBrackets": "never",
+  "workbench.tips.enabled": false,
+  "editor.colorDecorators": false,
+  "git.decorations.enabled": false,
+  "workbench.startupEditor": "none",
+  "editor.lightbulb.enabled": "off",
+  "editor.selectionHighlight": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderLineHighlight": "none",
+  "editor.occurrencesHighlight": "off",
+  "problems.decorations.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+
+  "editor.padding.top": 16,
+
+  "editor.stickyScroll.enabled": false,
+  "workbench.tree.enableStickyScroll": false,
+
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.wordWrap": "on",
+
+  // Search
+  "search.smartCase": true,
+  "search.useIgnoreFiles": false,
+  "search.exclude": {
+    "*/vendor/": true,
+    "*/public/": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true
+  },
+
+  "editor.codeLensFontSize": 14,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 28,
+  "editor.suggestFontSize": 15,
+  "editor.suggestLineHeight": 28,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.lineHeight": 1,
+  "debug.console.fontSize": 10,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.tabCloseButton": false,
+
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "borderWidth": "0 0 1px 0",
+      "left": {
+        "underline": "yellow"
+      },
+      "name": {
+        "highlight": "rgba(180, 20, 80, 0.3)"
+      }
+    },
+    "closing": {
+      "full": {
+        "custom": {
+          "dark": {
+            "borderWidth": "0 0 1px 0",
+            "borderColor": "yellow",
+            "borderStyle": "solid",
+            "borderRadius": "4px",
+            "right": "10px"
+          },
+          "light": {
+            "borderWidth": "0 0 1px 0",
+            "borderColor": "brown",
+            "borderStyle": "solid",
+            "borderRadius": "4px",
+            "right": "10px"
+          }
+        }
+      }
+    }
+  },
+  "editor.guides.indentation": false,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true, // optional
+  "editor.formatOnSaveMode": "file", // required to format on save
+  "workbench.editor.tabSizing": "shrink",
+  "terminal.external.osxExec": "terminal.app",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "workbench.iconTheme": "helium-icon-theme",
+  "editor.glyphMargin": false,
+  "editor.fontFamily": "'DankMono-Regular'",
+  "editor.fontWeight": "600",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js" //class keyword
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  },
+
+  "editor.fontLigatures": true,
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "intelephense.diagnostics.undefinedProperties": false,
+  "intelephense.diagnostics.undefinedTypes": false,
+  "git.autofetch": true,
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
+  "advancedNewFile.exclude": {
+    "node_modules": true,
+    "node_modules_electron": true,
+    "dev": true,
+    "dist": true
+  },
+  "advancedNewFile.showInformationMessages": true,
+  "advancedNewFile.convenienceOptions": ["last", "current", "root"],
+  "git.enableSmartCommit": true,
+  "workbench.editor.tabActionCloseVisibility": false,
+  "mssql.objectExplorer.groupBySchema": true,
+  "workbench.activityBar.location": "hidden",
+  "security.workspace.trust.untrustedFiles": "open",
+  "vscode_custom_css.imports": [
+    "file:///Users/kalebunna/.config/vscode/custom.css",
+    "file:///Users/kalebunna/.config/vscode/custom.js"
+  ],
+  "workbench.statusBar.visible": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.sideBar.location": "right",
+  "workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"]
+}
